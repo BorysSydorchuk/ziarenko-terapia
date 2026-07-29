@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (in case local tooling is added later, e.g. a dev server or linter)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Env / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Local-only asset drafts (uncomment if used to stage originals before optimizing)
+# images/*-original.*
