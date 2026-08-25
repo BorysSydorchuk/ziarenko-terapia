@@ -40,12 +40,6 @@ already static.
 
 ## Before going live — placeholders to replace
 
-- **`images/hero.jpg`** — therapist headshot. The hero section currently
-  shows a gradient placeholder div; a `<!-- REPLACE -->` comment directly
-  above it in `index.html`/`pl.html` shows the exact `<img>` tag to swap
-  it in (520×650, `loading="eager"`).
-- **`images/office.jpg`** — office photo. Same pattern, in the About
-  section (480×600, `loading="lazy"`).
 - **`images/og-image.png`** — 1200×630 social-share image. Doesn't exist
   yet; until it's added, `og:image` won't render a preview when the site
   is shared on social media. A comment above the tag in both `<head>`s
