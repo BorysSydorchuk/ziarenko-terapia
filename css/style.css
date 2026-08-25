@@ -134,7 +134,8 @@ h1, h2, h3 { font-family: 'Lora', serif; font-weight: 600; line-height: 1.2; }
 .icon-heading span.contact-label {
   margin-bottom: 0;
 }
-.icon-heading + p {
+.icon-heading + p,
+.icon-heading + a {
   padding-left: 38px;
 }
 
@@ -296,23 +297,6 @@ h1, h2, h3 { font-family: 'Lora', serif; font-weight: 600; line-height: 1.2; }
   aspect-ratio: 1 / 1;
 }
 
-.img-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: 'Lora', serif;
-  font-size: 15px;
-  text-align: center;
-  padding: 16px;
-}
-
-.hero-placeholder {
-  background: linear-gradient(135deg, #DCC98E 0%, #8A8B5C 100%);
-}
-
 .eyebrow {
   font-size: 13px;
   letter-spacing: 0.12em;
@@ -416,7 +400,6 @@ h1, h2, h3 { font-family: 'Lora', serif; font-weight: 600; line-height: 1.2; }
   border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%;
   aspect-ratio: 4 / 5;
 }
-.about-placeholder { background: linear-gradient(135deg, #ECE4D2 0%, #DCC98E 100%); }
 
 .about-text p { margin-bottom: 20px; }
 .about-languages { font-size: 14px; color: var(--color-text-secondary); margin-top: 8px; margin-bottom: 0; }
