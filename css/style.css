@@ -3,16 +3,19 @@
    ========================================================================== */
 
 :root {
-  --color-bg: #FAF7F2;
-  --color-bg-alt: #F2EDE4;
-  --color-accent: #6B7C3A;
-  --color-accent-hover: #556030;
-  --color-secondary: #D4A843;
+  --color-bg: #F3EEE1;
+  --color-bg-alt: #ECE4D2;
+  --color-gold: #DCC98E;
+  --color-tertiary: #B4B07A;
+  --color-accent-soft: #8A8B5C;
+  --color-accent: #C1592E;
+  --color-accent-hover: #A34926;
+  --color-secondary: #DCC98E;
   --color-text: #2C2C2C;
-  --color-text-secondary: #6B6B6B;
-  --color-border: #E8E0D5;
-  --color-input-border: #D8CFC4;
-  --color-input-bg: #FDFBF8;
+  --color-text-secondary: #6B6B5C;
+  --color-border: #E2D9C4;
+  --color-input-border: #D3C7A9;
+  --color-input-bg: #FBF9F3;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -20,25 +23,40 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 17px;
   line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);
 }
 
+.text-secondary,
+.eyebrow,
+.trust-line,
+.sub-label,
+.info-label,
+.contact-label,
+.about-languages,
+.discreet-note,
+.practical-note,
+.response-note,
+.faq-body-inner {
+  font-style: italic;
+  font-weight: 300;
+}
+
 section[id] { scroll-margin-top: 80px; }
 
 img { max-width: 100%; display: block; }
 
-a { color: var(--color-accent); text-decoration: none; }
+a { color: var(--color-accent-soft); text-decoration: none; }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent-soft);
   outline-offset: 3px;
 }
 
-h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.2; }
+h1, h2, h3 { font-family: 'Lora', serif; font-weight: 600; line-height: 1.2; }
 
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
@@ -61,7 +79,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   display: inline-block;
   border-radius: 6px;
   padding: 16px 32px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -81,7 +99,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 
 .link-underline {
   display: inline-block;
-  color: var(--color-accent);
+  color: var(--color-accent-soft);
   text-decoration: underline;
   margin-top: 20px;
   font-size: 16px;
@@ -92,6 +110,32 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   font-style: italic;
   color: var(--color-text-secondary);
   margin-top: 16px;
+}
+
+/* ==========================================================================
+   Logo-as-icon (replaces emoji markers throughout the page)
+   ========================================================================== */
+
+.icon-logo {
+  width: 24px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.icon-heading h3,
+.icon-heading h4,
+.icon-heading span.info-label,
+.icon-heading span.contact-label {
+  margin-bottom: 0;
+}
+.icon-heading + p {
+  padding-left: 38px;
 }
 
 /* ==========================================================================
@@ -131,7 +175,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 }
 .nav-logo svg { width: 28px; height: auto; }
 .brand-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 22px;
   color: var(--color-text);
@@ -214,7 +258,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
     color: var(--color-text);
     font-size: 15px;
   }
-  .nav-links a:hover { color: var(--color-accent); }
+  .nav-links a:hover { color: var(--color-accent-soft); }
 }
 
 /* ==========================================================================
@@ -254,22 +298,22 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   text-align: center;
   padding: 16px;
 }
 
 .hero-placeholder {
-  background: linear-gradient(135deg, #D4A843 0%, #6B7C3A 100%);
+  background: linear-gradient(135deg, #DCC98E 0%, #8A8B5C 100%);
 }
 
 .eyebrow {
   font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  font-family: 'Inter', sans-serif;
+  color: var(--color-accent-soft);
+  font-family: 'Lora', serif;
   margin-bottom: 16px;
 }
 
@@ -332,13 +376,12 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 
 .validation-card {
   background: #fff;
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-tertiary);
   border-radius: 8px;
   padding: 28px 24px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
-.validation-card .icon { font-size: 24px; display: block; margin-bottom: 12px; }
-.validation-card h3 { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.validation-card h3 { font-family: 'Lora', serif; font-size: 16px; font-weight: 700; }
 .validation-card p { font-size: 14px; color: var(--color-text-secondary); }
 
 .validation-footer {
@@ -368,7 +411,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%;
   aspect-ratio: 4 / 5;
 }
-.about-placeholder { background: linear-gradient(135deg, #F2EDE4 0%, #D4A843 100%); }
+.about-placeholder { background: linear-gradient(135deg, #ECE4D2 0%, #DCC98E 100%); }
 
 .about-text p { margin-bottom: 20px; }
 .about-languages { font-size: 14px; color: var(--color-text-secondary); margin-top: 8px; margin-bottom: 0; }
@@ -380,13 +423,51 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   margin-top: 20px;
 }
 .chip {
-  background: var(--color-accent);
+  background: var(--color-accent-soft);
   color: #fff;
   border-radius: 20px;
   padding: 6px 14px;
   font-size: 13px;
   font-weight: 500;
 }
+
+.about-quote { font-style: italic; }
+
+.about-continued { margin-top: 40px; }
+.about-continued p { margin-bottom: 20px; }
+
+.about-subheading {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.about-signoff { font-style: italic; }
+
+.priorities { margin: 48px 0; }
+
+.priorities-heading {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.priorities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 640px) {
+  .priorities-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.priority-card {
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  padding: 24px;
+}
+.priority-card .icon-heading { margin-bottom: 8px; }
+.priority-card h4 { font-size: 16px; font-weight: 600; }
+.priority-card p { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 0; }
 
 /* ==========================================================================
    Services
@@ -406,7 +487,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 .sub-label {
   font-size: 13px;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-accent-soft);
   letter-spacing: 0.1em;
   margin-bottom: 12px;
   display: block;
@@ -422,7 +503,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 }
 .check-list li::before {
   content: "✓";
-  color: var(--color-accent);
+  color: var(--color-accent-soft);
   position: absolute;
   left: 0;
   font-weight: 700;
@@ -431,18 +512,15 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 .approach-cards { display: flex; flex-direction: column; gap: 16px; }
 .approach-card {
   background: #fff;
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-tertiary);
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
-.approach-card .icon { font-size: 22px; margin-bottom: 8px; display: block; }
-.approach-card h3 { font-size: 20px; margin-bottom: 8px; }
 .approach-card h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 8px;
 }
 .approach-card p { font-size: 15px; color: var(--color-text-secondary); }
 
@@ -475,14 +553,12 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   padding: 28px 24px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
-.info-card .icon { font-size: 28px; color: var(--color-secondary); display: block; margin-bottom: 12px; }
 .info-card .info-label {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-text-secondary);
   display: block;
-  margin-bottom: 6px;
 }
 .info-card .info-value { font-size: 17px; color: var(--color-text); }
 .info-card iframe { margin-top: 16px; }
@@ -518,7 +594,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   background: none;
   border: none;
   padding: 20px 4px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--color-text);
@@ -580,7 +656,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   padding: 12px 16px;
   border: 1px solid var(--color-input-border);
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
   background: var(--color-input-bg);
   color: var(--color-text);
@@ -588,8 +664,8 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(107,124,58,0.1);
+  border-color: var(--color-accent-soft);
+  box-shadow: 0 0 0 3px rgba(138,139,92,0.15);
 }
 .form-field textarea { resize: vertical; }
 
@@ -610,7 +686,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
   padding: 32px;
   text-align: center;
   font-size: 18px;
-  color: var(--color-accent);
+  color: var(--color-accent-soft);
 }
 .form-success.visible { display: block; }
 
@@ -727,4 +803,4 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-he
 .privacy-policy-inner { padding: 48px 0; }
 .privacy-policy h2 { color: var(--color-bg); font-size: 24px; margin-bottom: 20px; }
 .privacy-policy p { font-size: 14px; margin-bottom: 16px; max-width: 720px; }
-.privacy-policy a { color: #D4A843; }
+.privacy-policy a { color: #DCC98E; }

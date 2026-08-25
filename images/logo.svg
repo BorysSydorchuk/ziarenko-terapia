@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" role="img" aria-label="Зернятко">
-  <ellipse cx="50" cy="70" rx="33" ry="54" fill="none" stroke="#D4A843" stroke-width="3"/>
-  <path d="M50 118 L50 66" stroke="#6B7C3A" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <path d="M50 95 C38 92 30 82 33 70 C45 72 50 84 50 95 Z" fill="#6B7C3A"/>
-  <path d="M50 85 C62 82 70 72 67 60 C55 62 50 74 50 85 Z" fill="#6B7C3A"/>
+  <ellipse cx="50" cy="70" rx="31" ry="52" fill="none" stroke="#B4B07A" stroke-width="7"/>
+  <path d="M50 116 L50 66" stroke="#8A8B5C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M50 95 C38 92 30 82 33 70 C45 72 50 84 50 95 Z" fill="#8A8B5C"/>
+  <path d="M50 85 C62 82 70 72 67 60 C55 62 50 74 50 85 Z" fill="#C1592E"/>
 </svg>
